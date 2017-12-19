@@ -15,75 +15,30 @@ Eclipse download link: https://www.eclipse.org/downloads/
 Apache Tomcat download Link: http://tomcat.apache.org/download-90.cgi 
 ```
 
-### Installing
+### Setup
 
 After downloading the project files, you may need to setup the development enviroment as follow steps to run the web app:
 
-```
 1. Open Eclipse and click File menu, then select Import.
 2. Please select the General -> Existing Projects into Workplace and then browse the Project folder.
-3. To setup tomcat server, you may need to click the Servers tag here:
-  ![image](https://github.com/jjtpc1205/Source_Images/blob/master/23AndMe_HW_Instructions_2.png)
-```
+3. To setup tomcat server, you may need to click the Servers tag here:(There should be no server, but you can click it to define a new one)
+  ![Ins1](https://github.com/jjtpc1205/Source_Images/blob/master/23AndMe_HW_Instructions_2.png)
+4. Then define a new server, please choose Tomcat v9.0 Server:
+  ![Ins2](https://github.com/jjtpc1205/Source_Images/blob/master/23AndMe_HW_Instructions_1.png)
+5. Double click the server name:
+  ![Ins3](https://github.com/jjtpc1205/Source_Images/blob/master/23AndMe_HW_Instructions_4.png)
+6. At this page, switch server location to "Use Tomcat Installation" and browse the Tomcat folder you downloaded.
+(you can also change the port number if you want to, the default port number is 8080 for localhost)
+  ![Ins4](https://github.com/jjtpc1205/Source_Images/blob/master/23AndeMe_HW_Instructions_6.png)
+7. Right click the server name and select the properties, and then click the switch location, then click OK.
+8. Right click the server name again to select "Add and Remove", choose the project and add it into Configured List.
+9. Right click the server and choose "start".
 
-And repeat
+## Running the app
 
-```
-until finished
-```
+1. Type "http://localhost:8080/MusicalGeneRank/" into your browser address bar and go to the page.
+2. Click the "Let's go' button to see the score.
 
-End with an example of getting some data out of the system or using it for a little demo
+### Implementation Discussion
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+In the front-end development, I used native javascript to make ajax call for retrieving the musical score of current user. In the back-end development, I used java servlet to handle the http request and response. And, for the detail design, i applied the builder pattern on the Record Class, the reason why i used this pattern is to make sure the app has good scalability. Since for this homework, we just need to determine a genetically score for potential musician, but in the future, we may need to use same user record to calculate other kind of scores, maybe for football player or basketball palyer. So, in that situation we have to put lots of data into single user record, then the Record instantiation will be crazy. For possible next steps, I can use the factory pattern to generate multiple JSON parse functions(To extract the necessary data and filter out unwanted data) and the corresponding algorithms for different purposes.
