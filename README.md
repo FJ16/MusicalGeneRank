@@ -1,7 +1,6 @@
-# MusicalGeneRank
-# Project Title
+# MusicalGeneRank - 23AndMe HW
 
-One Paragraph of project description goes here
+Use given API and demo info to calculate and display the genetically musical score.
 
 ## Getting Started
 
