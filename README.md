@@ -4,11 +4,11 @@ Use given API and demo info to calculate and display the genetically musical sco
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You may need to install the Eclipse IDE(J2EE version) and download the Apache Tomcat Server Files.
 
 ```
 Give examples
