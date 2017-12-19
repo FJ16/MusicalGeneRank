@@ -4,7 +4,7 @@ Use given API and demo info to calculate and display the genetically musical sco
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on your local machine for testing purposes. 
 
 ### Prerequisites
 
