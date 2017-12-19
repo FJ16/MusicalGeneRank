@@ -8,20 +8,22 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You may need to install the Eclipse IDE(J2EE version) and download the Apache Tomcat Server Files.
+You may need to install the Eclipse IDE(J2EE version), JAVA 8 and download the Apache Tomcat 9 Server Files for further setup.
 
 ```
-Give examples
+Eclipse download link: https://www.eclipse.org/downloads/
+Apache Tomcat download Link: http://tomcat.apache.org/download-90.cgi 
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+After downloading the project files, you may need to setup the development enviroment as follow steps to run the web app:
 
 ```
-Give the example
+1. Open Eclipse and click File menu, then select Import.
+2. Please select the General -> Existing Projects into Workplace and then browse the Project folder.
+3. To setup tomcat server, you may need to click the Servers tag here:
+  ![image](https://github.com/jjtpc1205/Source_Images/blob/master/23AndMe_HW_Instructions_2.png)
 ```
 
 And repeat
